@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Results</h1>
+        <div class="results">
+            <h2>{{ result.filename }}</h2>
+            
+            <div class="section">
+                <h3>Basic Info</h3>
+                <p><strong>File Type:</strong> {{ result.file_type }}</p>
+                <p><strong>Size:</strong> {{ result.size_mb }} MB</p>
+                {% if result.duration %}
+                <p><strong>Duration:</strong> {{ result.duration }} seconds</p>
+                {% endif %}
+            </div>
+            
+            <div class="section">
+                <h3>Hex Header</h3>
+                <div class="hex-display">
+                    {{ result.hex_data }}
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>ASCII Preview</h3>
+                <div class="ascii-display">
+                    {{ result.ascii_preview }}
+                </div>
+            </div>
+            
+            <a href="/" class="button">Analyze Another File</a>
+        </div>
+    </div>
+</body>
+</html>
