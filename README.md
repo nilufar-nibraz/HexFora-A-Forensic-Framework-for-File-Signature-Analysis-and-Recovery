@@ -1,2 +1,3 @@
 # HexFora-A-Forensic-Framework-for-File-Signature-Analysis-and-Recovery
 Integrating Hex Signature Analysis and AI Support for File Type Detection
+HexFora is a forensic file analysis web application designed to detect file tampering, validate magic numbers (hex signatures), and extract critical file metadata. It supports common media and document formats, highlighting discrepancies in header data that may indicate corruption or spoofing. HexFora was developed using Python, Flask, and MoviePy, and aims to provide an accessible, field-ready tool for forensic investigators, law enforcement, and IT professionals. Future versions will include AI assistance for deeper format inference.
